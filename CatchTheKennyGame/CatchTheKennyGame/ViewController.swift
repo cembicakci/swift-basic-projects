@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     var score = 0
     var timer = Timer()
     var counter = 0
+    var kennyArray = [UIImageView]()
+    var hideTimer = Timer()
+    var highscore = 0
     
     //Views
     @IBOutlet weak var timeLabel: UILabel!
@@ -27,11 +30,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var kenny7: UIImageView!
     @IBOutlet weak var kenny8: UIImageView!
     @IBOutlet weak var kenny9: UIImageView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scoreLabel.text = "Score: \(score)"
+        
+        //Highscore check
+        let storedHighscore = UserDefaults.standard.object(forKey: "highscore")
+        if (storedHighscore == nil){
+            highscore = 0;
+            highscoreLabel.text = "Highscore: \(highscore)"
+        }
+        
+        if let newScore = storedHighscore as? Int{
+            highscore = newScore
+            highscoreLabel.text = "Highscore: \(highscore)"
+        }
         
         //UITapGestureRecognizer: Kullanıcı bir görünüme tıkladığında bir fonksiyonu çalıştır.
         //Bir recognizer yapıp hepsi için kullanamıyoruz. Ayrı ayrı oluşturmak gerekiyor.
@@ -70,12 +86,29 @@ class ViewController: UIViewController {
         kenny9.addGestureRecognizer(recognizer9)
         
         
+        //Kenny Array
+        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
+        
+        
         //Timers
         counter = 10
         timeLabel.text = "\(counter)"
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
+        hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideKenny), userInfo: nil, repeats: true)
         
+        hideKenny()
+        
+    }
+    
+    @objc func hideKenny(){
+        for kenny in kennyArray{
+            kenny.isHidden = true
+        }
+        
+        //0-8 arasında rastele bir rakam üret
+        let random = Int(arc4random_uniform(UInt32(kennyArray.count - 1)))
+        kennyArray[random].isHidden = false
     }
 
     @objc func increaseScore(){
@@ -91,6 +124,20 @@ class ViewController: UIViewController {
         if (counter == 0){
             //Stop timer
             timer.invalidate()
+            hideTimer.invalidate()
+            
+            for kenny in kennyArray{
+                kenny.isHidden = true
+            }
+            
+            //Highscore
+            if(self.score > self.highscore){
+                self.highscore = self.score
+                highscoreLabel.text = "Highscore: \(self.highscore)"
+                //önbelleğe kaydet
+                UserDefaults.standard.set(self.highscore, forKey: "highscore")
+            }
+            
             
             //Alert
             let alert = UIAlertController(title: "Time is up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
@@ -98,6 +145,13 @@ class ViewController: UIViewController {
             let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel)
             let replayButton = UIAlertAction(title: "Replay", style: UIAlertAction.Style.default) { UIAlertAction in
                 //replay function
+                self.score = 0
+                self.scoreLabel.text = "Score: \(self.score)"
+                self.counter = 10
+                self.timeLabel.text = "\(self.counter)"
+                
+                self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.countDown), userInfo: nil, repeats: true)
+                self.hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.hideKenny), userInfo: nil, repeats: true)
             }
             
             //Alert a butonları ekle.
