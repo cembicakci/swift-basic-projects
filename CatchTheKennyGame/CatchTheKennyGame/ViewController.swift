@@ -9,12 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Variables
     var score = 0
+    var timer = Timer()
+    var counter = 0
     
+    //Views
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var highscoreLabel: UILabel!
-    
     @IBOutlet weak var kenny1: UIImageView!
     @IBOutlet weak var kenny2: UIImageView!
     @IBOutlet weak var kenny3: UIImageView!
@@ -66,12 +69,44 @@ class ViewController: UIViewController {
         kenny8.addGestureRecognizer(recognizer8)
         kenny9.addGestureRecognizer(recognizer9)
         
+        
+        //Timers
+        counter = 10
+        timeLabel.text = "\(counter)"
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
+        
     }
 
     @objc func increaseScore(){
         score += 1
         scoreLabel.text = "Score: \(score)"
         
+    }
+    
+    @objc func countDown(){
+        counter -= 1
+        timeLabel.text = "\(counter)"
+        
+        if (counter == 0){
+            //Stop timer
+            timer.invalidate()
+            
+            //Alert
+            let alert = UIAlertController(title: "Time is up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
+            
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel)
+            let replayButton = UIAlertAction(title: "Replay", style: UIAlertAction.Style.default) { UIAlertAction in
+                //replay function
+            }
+            
+            //Alert a butonları ekle.
+            alert.addAction(okButton)
+            alert.addAction(replayButton)
+            
+            //Alert ı göstermek için.
+            self.present(alert, animated: true)
+        }
     }
 
 }
