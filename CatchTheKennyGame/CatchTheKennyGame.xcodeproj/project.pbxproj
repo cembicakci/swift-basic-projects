@@ -42,6 +42,7 @@
 		E5A7646F2A514C0000E283D3 = {
 			isa = PBXGroup;
 			children = (
+				E5A764912A516AF500E283D3 /* README.md */,
 				E5A7647A2A514C0000E283D3 /* CatchTheKennyGame */,
 				E5A764792A514C0000E283D3 /* Products */,
 			);
@@ -65,7 +66,6 @@
 				E5A764842A514C0100E283D3 /* Assets.xcassets */,
 				E5A764862A514C0100E283D3 /* LaunchScreen.storyboard */,
 				E5A764892A514C0100E283D3 /* Info.plist */,
-				E5A764912A516AF500E283D3 /* README.md */,
 			);
 			path = CatchTheKennyGame;
 			sourceTree = "<group>";
