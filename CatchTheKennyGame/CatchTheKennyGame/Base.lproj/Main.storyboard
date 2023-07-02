@@ -125,6 +125,20 @@
                             <constraint firstItem="Tmj-JL-pSq" firstAttribute="leading" secondItem="Yit-VO-1e1" secondAttribute="leading" id="zTU-gY-Lds"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="LVj-jQ-OFX" id="KJA-O5-IWK"/>
+                        <outlet property="kenny1" destination="g9F-NN-vHg" id="RlJ-47-bU1"/>
+                        <outlet property="kenny2" destination="pIg-l7-TIz" id="UeD-aI-0k6"/>
+                        <outlet property="kenny3" destination="jKk-DE-5qw" id="BV2-1j-PF9"/>
+                        <outlet property="kenny4" destination="weq-MD-zVa" id="3F3-JV-G0Q"/>
+                        <outlet property="kenny5" destination="Tmj-JL-pSq" id="F71-JP-hcY"/>
+                        <outlet property="kenny6" destination="n6I-rb-q2e" id="7pb-Th-7c5"/>
+                        <outlet property="kenny7" destination="GzA-93-HHf" id="MZP-gh-b6q"/>
+                        <outlet property="kenny8" destination="Yit-VO-1e1" id="tRb-Sg-X2k"/>
+                        <outlet property="kenny9" destination="CQY-M3-ZwV" id="y66-e9-6sN"/>
+                        <outlet property="scoreLabel" destination="g2U-lv-gKC" id="hvn-OJ-bSt"/>
+                        <outlet property="timeLabel" destination="Y6G-bP-FJc" id="0lM-q1-vkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
