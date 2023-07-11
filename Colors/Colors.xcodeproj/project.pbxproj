@@ -13,6 +13,7 @@
 		E58CA3052A5DC2E500E7D264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58CA3032A5DC2E500E7D264 /* Main.storyboard */; };
 		E58CA3072A5DC2E600E7D264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58CA3062A5DC2E600E7D264 /* Assets.xcassets */; };
 		E58CA30A2A5DC2E600E7D264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58CA3082A5DC2E600E7D264 /* LaunchScreen.storyboard */; };
+		E58CA3122A5DC5D000E7D264 /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58CA3112A5DC5D000E7D264 /* ColorsDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E58CA3062A5DC2E600E7D264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58CA3092A5DC2E600E7D264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E58CA30B2A5DC2E600E7D264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58CA3112A5DC5D000E7D264 /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E58CA2FD2A5DC2E500E7D264 /* AppDelegate.swift */,
 				E58CA2FF2A5DC2E500E7D264 /* SceneDelegate.swift */,
 				E58CA3012A5DC2E500E7D264 /* ViewController.swift */,
+				E58CA3112A5DC5D000E7D264 /* ColorsDetailVC.swift */,
 				E58CA3032A5DC2E500E7D264 /* Main.storyboard */,
 				E58CA3062A5DC2E600E7D264 /* Assets.xcassets */,
 				E58CA3082A5DC2E600E7D264 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58CA3022A5DC2E500E7D264 /* ViewController.swift in Sources */,
+				E58CA3122A5DC5D000E7D264 /* ColorsDetailVC.swift in Sources */,
 				E58CA2FE2A5DC2E500E7D264 /* AppDelegate.swift in Sources */,
 				E58CA3002A5DC2E500E7D264 /* SceneDelegate.swift in Sources */,
 			);
