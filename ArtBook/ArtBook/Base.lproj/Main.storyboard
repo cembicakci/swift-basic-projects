@@ -48,56 +48,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GzM-kH-s9v">
-                                <rect key="frame" x="0.0" y="101" width="393" height="320"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" artist" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-39-NST">
-                                <rect key="frame" x="16" y="496" width="361" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" artist" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-39-NST">
+                                <rect key="frame" x="16" y="601" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-fw-lSp">
-                                <rect key="frame" x="16" y="538" width="361" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-fw-lSp">
+                                <rect key="frame" x="16" y="643" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OC-ns-uEb">
-                                <rect key="frame" x="16" y="454" width="361" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-Ng-Kxb">
-                                <rect key="frame" x="143" y="601" width="106" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="nUv-ul-V17"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-Ng-Kxb">
+                                <rect key="frame" x="143" y="706" width="106" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
                                     <action selector="saveButton:" destination="4Cl-37-A2B" eventType="touchUpInside" id="Ltn-yz-n5R"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OC-ns-uEb">
+                                <rect key="frame" x="16" y="559" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="GzM-kH-s9v">
+                                <rect key="frame" x="0.0" y="95" width="393" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YEy-24-U0l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2OC-ns-uEb" firstAttribute="leading" secondItem="4e1-pF-ACn" secondAttribute="leadingMargin" id="30k-Qu-Q3Y"/>
-                            <constraint firstItem="lhd-39-NST" firstAttribute="top" secondItem="2OC-ns-uEb" secondAttribute="bottom" constant="8" id="GfJ-S6-V2X"/>
-                            <constraint firstItem="GzM-kH-s9v" firstAttribute="leading" secondItem="YEy-24-U0l" secondAttribute="leading" id="Gnn-Y1-igL"/>
-                            <constraint firstItem="4cR-Ng-Kxb" firstAttribute="leading" secondItem="YEy-24-U0l" secondAttribute="leading" constant="143" id="MD1-Tw-vSV"/>
-                            <constraint firstItem="4cR-Ng-Kxb" firstAttribute="top" secondItem="Vcv-fw-lSp" secondAttribute="bottom" constant="29" id="UTw-0p-YXp"/>
-                            <constraint firstItem="2OC-ns-uEb" firstAttribute="trailing" secondItem="4e1-pF-ACn" secondAttribute="trailingMargin" id="VFd-hW-eC3"/>
-                            <constraint firstItem="2OC-ns-uEb" firstAttribute="leading" secondItem="lhd-39-NST" secondAttribute="leading" id="dfd-TF-bya"/>
-                            <constraint firstItem="lhd-39-NST" firstAttribute="leading" secondItem="Vcv-fw-lSp" secondAttribute="leading" id="e09-pd-i0q"/>
-                            <constraint firstItem="Vcv-fw-lSp" firstAttribute="top" secondItem="lhd-39-NST" secondAttribute="bottom" constant="8" id="ewh-gS-AMw"/>
-                            <constraint firstItem="2OC-ns-uEb" firstAttribute="top" secondItem="GzM-kH-s9v" secondAttribute="bottom" constant="33" id="hYD-Vs-6cJ"/>
-                            <constraint firstItem="GzM-kH-s9v" firstAttribute="centerX" secondItem="2OC-ns-uEb" secondAttribute="centerX" id="lIK-B3-fS8"/>
-                            <constraint firstItem="GzM-kH-s9v" firstAttribute="top" secondItem="4e1-pF-ACn" secondAttribute="topMargin" constant="-2" id="q4I-51-v5s"/>
-                            <constraint firstItem="lhd-39-NST" firstAttribute="trailing" secondItem="Vcv-fw-lSp" secondAttribute="trailing" id="qb4-3c-QqT"/>
-                            <constraint firstItem="Vcv-fw-lSp" firstAttribute="centerX" secondItem="4cR-Ng-Kxb" secondAttribute="centerX" id="vQH-hG-lED"/>
-                            <constraint firstItem="YEy-24-U0l" firstAttribute="bottom" secondItem="4cR-Ng-Kxb" secondAttribute="bottom" constant="155" id="xHU-ah-2Fh"/>
-                            <constraint firstItem="2OC-ns-uEb" firstAttribute="trailing" secondItem="lhd-39-NST" secondAttribute="trailing" id="xcR-qR-kQZ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mxd-gQ-2VE"/>
                     <connections>
@@ -131,6 +115,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="select" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
