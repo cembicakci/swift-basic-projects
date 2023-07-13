@@ -28,6 +28,7 @@
 		E5A0550B2A5F13630094EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A0550D2A5F13630094EBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5A055132A5F15DE0094EBC9 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		E5A055152A60655F0094EBC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				E5A0550A2A5F13630094EBC9 /* LaunchScreen.storyboard */,
 				E5A0550D2A5F13630094EBC9 /* Info.plist */,
 				E5A055052A5F13620094EBC9 /* ArtBook.xcdatamodeld */,
+				E5A055152A60655F0094EBC9 /* README.md */,
 			);
 			path = ArtBook;
 			sourceTree = "<group>";
