@@ -66,7 +66,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         }
     }
         
-    //kullanıcının konumunu altıktan sonra ne yapılacak, didUpdateLocation
+    //kullanıcının konumunu aldıktan sonra ne yapılacak, didUpdateLocation
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         //CLLocation => enlem ve boylam barındırır
