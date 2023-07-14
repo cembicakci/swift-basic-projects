@@ -92,6 +92,11 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
                                         mapView.addAnnotation(annotation)
                                         nameText.text = annotationTitle
                                         commentText.text = annotationSubtitle
+                                        
+                                        
+                                        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+                                        let region = MKCoordinateRegion(center: coordinate, span: span)
+                                        mapView.setRegion(region, animated: true)
                                     }
                                 }
                             }
@@ -134,17 +139,20 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         
     //kullanıcının konumunu aldıktan sonra ne yapılacak, didUpdateLocation
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        //CLLocation => enlem ve boylam barındırır
-        //Enlem ve boylamdan koordinatı tanımlıyoruz
-        let location = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
-        
-        //Haritada gösterebilmek için span
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        
-        //region a konumu ve spani tanımlıyoruz.
-        let region = MKCoordinateRegion(center: location, span: span)
-        mapView.setRegion(region, animated: true)
+        //selectedTitle boş ise kullanıcının konumuna git, yoksa burası çalışmayacak seçili olan yerdeki konuma gidecek
+        if(selectedTitle == ""){
+            //CLLocation => enlem ve boylam barındırır
+            //Enlem ve boylamdan koordinatı tanımlıyoruz
+            let location = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
+            
+            //Haritada gösterebilmek için span
+            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            
+            //region a konumu ve spani tanımlıyoruz.
+            let region = MKCoordinateRegion(center: location, span: span)
+            mapView.setRegion(region, animated: true)
+        }
+       
     }
 
     
