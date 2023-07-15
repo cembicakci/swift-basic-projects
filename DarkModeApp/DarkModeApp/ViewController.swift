@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         //sadece bu viewController için
         overrideUserInterfaceStyle = .light
         
-        //bütün app in modunu sabit yapmak için 
+        //bütün app in modunu sabit yapmak için
         
     }
     
