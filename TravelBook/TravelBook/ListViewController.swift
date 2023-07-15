@@ -30,7 +30,11 @@ class ListViewController: UIViewController , UITableViewDelegate, UITableViewDat
         
     }
     
-    func getData(){
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name("newPlace"), object: nil)
+    }
+    
+    @objc func getData(){
         
         //Coredata dan sadece title ve id yi çekiyoruz.
         //İkinci sayfaya sadece id yi göndereceğiz. Daha sonra id den diğer bilgileri yakalayacağız.

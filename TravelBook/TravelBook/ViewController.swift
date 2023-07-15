@@ -154,7 +154,59 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         }
        
     }
-
+    
+    //Annotation u özelleştir. Yanına info butonu eklemek için
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        //sadece tıklanan yeri göster, kullanıcının yerini gösterme.
+        if(annotation is MKUserLocation){
+            return nil
+        }
+        
+        let reuseId = "myAnnotation"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKMarkerAnnotationView
+        
+        if(pinView == nil){
+            pinView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView?.canShowCallout = true
+            pinView?.tintColor = UIColor.black
+            
+            let button = UIButton(type: UIButton.ButtonType.detailDisclosure)
+            pinView?.rightCalloutAccessoryView = button
+        }else{
+            pinView?.annotation = annotation
+        }
+        
+        return pinView
+        
+    }
+    
+    //callout => annotation daki butona tıklanması
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if(selectedTitle != ""){
+            
+            let requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLatitude)
+            
+            //koordinatlar ve yerler arasında bağlatı kurmamızı sağlayan sınıf, CLGeocoder
+            CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in
+                //closure
+                
+                if let placemark = placemarks{
+                    if(placemark.count > 0){
+                        let newPlaceMark = MKPlacemark(placemark: placemark[0])
+                        let item = MKMapItem(placemark: newPlaceMark)
+                        item.name = self.annotationTitle
+                        
+                        //option arabayla
+                        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+                        item.openInMaps(launchOptions: launchOptions)
+                    }
+                }
+                
+      
+            }
+        }
+    }
     
     
     @IBAction func saveButton(_ sender: Any) {
@@ -178,6 +230,10 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
             print("error")
         }
         
+        
+        //tableview i anlık olarak güncellemek için
+        NotificationCenter.default.post(name: NSNotification.Name("newPlace"), object: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 }
