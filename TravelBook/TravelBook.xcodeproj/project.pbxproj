@@ -28,6 +28,7 @@
 		E5A055542A606EDB0094EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A055562A606EDB0094EBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5A0555C2A6117C30094EBC9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E5A0555E2A62E26D0094EBC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				E5A055532A606EDB0094EBC9 /* LaunchScreen.storyboard */,
 				E5A055562A606EDB0094EBC9 /* Info.plist */,
 				E5A0554E2A606ED90094EBC9 /* TravelBook.xcdatamodeld */,
+				E5A0555E2A62E26D0094EBC9 /* README.md */,
 			);
 			path = TravelBook;
 			sourceTree = "<group>";
