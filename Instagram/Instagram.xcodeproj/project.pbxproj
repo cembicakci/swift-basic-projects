@@ -15,6 +15,9 @@
 		E5A055D52A63E0870094EBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A055D42A63E0870094EBC9 /* Assets.xcassets */; };
 		E5A055D82A63E0870094EBC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A055D62A63E0870094EBC9 /* LaunchScreen.storyboard */; };
 		E5A055E02A63E4B40094EBC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5A055DF2A63E4B40094EBC9 /* GoogleService-Info.plist */; };
+		E5A055E22A63F3BE0094EBC9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A055E12A63F3BE0094EBC9 /* FeedViewController.swift */; };
+		E5A055E42A63F3D70094EBC9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A055E32A63F3D70094EBC9 /* SettingsViewController.swift */; };
+		E5A055E62A63F3E50094EBC9 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A055E52A63F3E50094EBC9 /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		E5A055D72A63E0870094EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A055D92A63E0870094EBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5A055DF2A63E4B40094EBC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5A055E12A63F3BE0094EBC9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E5A055E32A63F3D70094EBC9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E5A055E52A63F3E50094EBC9 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				E5A055CB2A63E0860094EBC9 /* AppDelegate.swift */,
 				E5A055CD2A63E0860094EBC9 /* SceneDelegate.swift */,
 				E5A055CF2A63E0860094EBC9 /* ViewController.swift */,
+				E5A055E12A63F3BE0094EBC9 /* FeedViewController.swift */,
+				E5A055E52A63F3E50094EBC9 /* UploadViewController.swift */,
+				E5A055E32A63F3D70094EBC9 /* SettingsViewController.swift */,
 				E5A055D12A63E0860094EBC9 /* Main.storyboard */,
 				E5A055D42A63E0870094EBC9 /* Assets.xcassets */,
 				E5A055D62A63E0870094EBC9 /* LaunchScreen.storyboard */,
@@ -91,7 +100,6 @@
 				8DE7D4AC6026DB82A4BC539B /* Pods-Instagram.debug.xcconfig */,
 				48490635D45BB89A78EC5CB4 /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,7 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A055D02A63E0860094EBC9 /* ViewController.swift in Sources */,
+				E5A055E62A63F3E50094EBC9 /* UploadViewController.swift in Sources */,
 				E5A055CC2A63E0860094EBC9 /* AppDelegate.swift in Sources */,
+				E5A055E22A63F3BE0094EBC9 /* FeedViewController.swift in Sources */,
+				E5A055E42A63F3D70094EBC9 /* SettingsViewController.swift in Sources */,
 				E5A055CE2A63E0860094EBC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
