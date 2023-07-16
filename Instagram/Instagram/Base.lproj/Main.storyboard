@@ -15,14 +15,59 @@
                     <view key="view" contentMode="scaleToFill" id="9fe-zr-8Pd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvu-Ge-xKx">
+                                <rect key="frame" x="16" y="475" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="NlK-i9-Kca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFe-0z-Lds">
+                                <rect key="frame" x="147" y="532" width="98" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="uJ9-js-VpQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="ddu-DQ-swQ" eventType="touchUpInside" id="Jtp-3O-kgA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="click" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-fB-v8A">
+                                <rect key="frame" x="66" y="106" width="261" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="9bP-yj-GAe"/>
+                                    <constraint firstAttribute="height" constant="272" id="ULs-CV-DLz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RBu-pX-3GY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zvu-Ge-xKx" firstAttribute="centerX" secondItem="RFe-0z-Lds" secondAttribute="centerX" id="0Fc-Sm-4Dd"/>
+                            <constraint firstItem="RFe-0z-Lds" firstAttribute="top" secondItem="Zvu-Ge-xKx" secondAttribute="bottom" constant="22" id="IVl-c6-MDe"/>
+                            <constraint firstItem="Zvu-Ge-xKx" firstAttribute="top" secondItem="jBN-fB-v8A" secondAttribute="bottom" constant="98" id="IuD-B1-pMH"/>
+                            <constraint firstItem="RFe-0z-Lds" firstAttribute="leading" secondItem="RBu-pX-3GY" secondAttribute="leading" constant="147" id="LqK-Ta-ppC"/>
+                            <constraint firstItem="jBN-fB-v8A" firstAttribute="centerX" secondItem="Zvu-Ge-xKx" secondAttribute="centerX" id="Zby-Ve-1I0"/>
+                            <constraint firstItem="jBN-fB-v8A" firstAttribute="leading" secondItem="RBu-pX-3GY" secondAttribute="leading" constant="66" id="hn4-Cd-imE"/>
+                            <constraint firstItem="RBu-pX-3GY" firstAttribute="bottom" secondItem="RFe-0z-Lds" secondAttribute="bottom" constant="182" id="mkv-6s-l8d"/>
+                            <constraint firstItem="Zvu-Ge-xKx" firstAttribute="leading" secondItem="9fe-zr-8Pd" secondAttribute="leadingMargin" id="oqp-mX-YAe"/>
+                            <constraint firstItem="jBN-fB-v8A" firstAttribute="top" secondItem="RBu-pX-3GY" secondAttribute="top" constant="47" id="sEI-9s-1uW"/>
+                            <constraint firstItem="Zvu-Ge-xKx" firstAttribute="trailing" secondItem="9fe-zr-8Pd" secondAttribute="trailingMargin" id="uIF-nt-uFh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="hNz-Pb-2ED"/>
+                    <connections>
+                        <outlet property="commentText" destination="Zvu-Ge-xKx" id="KW7-VR-sCX"/>
+                        <outlet property="imageView" destination="jBN-fB-v8A" id="2Wj-RU-exq"/>
+                        <outlet property="uploadButton" destination="RFe-0z-Lds" id="fbd-R6-ll9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdC-fw-ws0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-692" y="195"/>
+            <point key="canvasLocation" x="-692.36641221374043" y="194.36619718309859"/>
         </scene>
         <!--Settings-->
         <scene sceneID="lQK-3I-WG1">
@@ -170,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="click" width="512" height="512"/>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
