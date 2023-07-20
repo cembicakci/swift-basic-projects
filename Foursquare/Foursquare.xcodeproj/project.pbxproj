@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E4A06B306CF8C2039784324A /* Pods_Foursquare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446A1D550EBBCB5D09266E6F /* Pods_Foursquare.framework */; };
+		E5709E162A686C1C002AEEC6 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709E152A686C1C002AEEC6 /* PlacesVC.swift */; };
 		E5971F242A684D9F007C8FDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5971F232A684D9F007C8FDA /* AppDelegate.swift */; };
 		E5971F262A684D9F007C8FDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5971F252A684D9F007C8FDA /* SceneDelegate.swift */; };
-		E5971F282A684D9F007C8FDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5971F272A684D9F007C8FDA /* ViewController.swift */; };
+		E5971F282A684D9F007C8FDA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5971F272A684D9F007C8FDA /* SignUpVC.swift */; };
 		E5971F2B2A684D9F007C8FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5971F292A684D9F007C8FDA /* Main.storyboard */; };
 		E5971F2D2A684D9F007C8FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5971F2C2A684D9F007C8FDA /* Assets.xcassets */; };
 		E5971F302A684D9F007C8FDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5971F2E2A684D9F007C8FDA /* LaunchScreen.storyboard */; };
@@ -20,10 +21,11 @@
 		1B44E1740702A951F01ED37A /* Pods-Foursquare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foursquare.debug.xcconfig"; path = "Target Support Files/Pods-Foursquare/Pods-Foursquare.debug.xcconfig"; sourceTree = "<group>"; };
 		40A4F72BEAA921AF49D2FAA3 /* Pods-Foursquare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foursquare.release.xcconfig"; path = "Target Support Files/Pods-Foursquare/Pods-Foursquare.release.xcconfig"; sourceTree = "<group>"; };
 		446A1D550EBBCB5D09266E6F /* Pods_Foursquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foursquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5709E152A686C1C002AEEC6 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		E5971F202A684D9F007C8FDA /* Foursquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foursquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5971F232A684D9F007C8FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5971F252A684D9F007C8FDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5971F272A684D9F007C8FDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5971F272A684D9F007C8FDA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E5971F2A2A684D9F007C8FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5971F2C2A684D9F007C8FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5971F2F2A684D9F007C8FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,7 +58,6 @@
 				1B44E1740702A951F01ED37A /* Pods-Foursquare.debug.xcconfig */,
 				40A4F72BEAA921AF49D2FAA3 /* Pods-Foursquare.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,7 +84,8 @@
 			children = (
 				E5971F232A684D9F007C8FDA /* AppDelegate.swift */,
 				E5971F252A684D9F007C8FDA /* SceneDelegate.swift */,
-				E5971F272A684D9F007C8FDA /* ViewController.swift */,
+				E5971F272A684D9F007C8FDA /* SignUpVC.swift */,
+				E5709E152A686C1C002AEEC6 /* PlacesVC.swift */,
 				E5971F292A684D9F007C8FDA /* Main.storyboard */,
 				E5971F2C2A684D9F007C8FDA /* Assets.xcassets */,
 				E5971F2E2A684D9F007C8FDA /* LaunchScreen.storyboard */,
@@ -207,8 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5971F282A684D9F007C8FDA /* ViewController.swift in Sources */,
+				E5971F282A684D9F007C8FDA /* SignUpVC.swift in Sources */,
 				E5971F242A684D9F007C8FDA /* AppDelegate.swift in Sources */,
+				E5709E162A686C1C002AEEC6 /* PlacesVC.swift in Sources */,
 				E5971F262A684D9F007C8FDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
