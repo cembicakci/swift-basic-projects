@@ -12,6 +12,7 @@
 		E5816DD12A6D465900ED020F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5816DD02A6D465900ED020F /* Assets.xcassets */; };
 		E5816DD42A6D465900ED020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5816DD32A6D465900ED020F /* Preview Assets.xcassets */; };
 		E5816DDB2A6D46CC00ED020F /* FavouriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5816DDA2A6D46CC00ED020F /* FavouriteModel.swift */; };
+		E5816DDD2A6D4C6400ED020F /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5816DDC2A6D4C6400ED020F /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E5816DD02A6D465900ED020F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5816DD32A6D465900ED020F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5816DDA2A6D46CC00ED020F /* FavouriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModel.swift; sourceTree = "<group>"; };
+		E5816DDC2A6D4C6400ED020F /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E5816DCC2A6D465800ED020F /* FavouriteBookApp.swift */,
 				E5816DCE2A6D465800ED020F /* ContentView.swift */,
+				E5816DDC2A6D4C6400ED020F /* DetailsView.swift */,
 				E5816DDA2A6D46CC00ED020F /* FavouriteModel.swift */,
 				E5816DD02A6D465900ED020F /* Assets.xcassets */,
 				E5816DD22A6D465900ED020F /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5816DCF2A6D465800ED020F /* ContentView.swift in Sources */,
+				E5816DDD2A6D4C6400ED020F /* DetailsView.swift in Sources */,
 				E5816DCD2A6D465800ED020F /* FavouriteBookApp.swift in Sources */,
 				E5816DDB2A6D46CC00ED020F /* FavouriteModel.swift in Sources */,
 			);

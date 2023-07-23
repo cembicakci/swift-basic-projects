@@ -10,16 +10,24 @@ import SwiftUI
 struct ContentView: View {
         
     var body: some View {
-        List {
-            ForEach(myFavourites) { favourite in
-                Section(header: Text(favourite.title)) {
-                    ForEach(favourite.elements) { element in
-                        Text(element.name)
+        
+        NavigationView {
+            
+            List {
+                ForEach(myFavourites) { favourite in
+                    Section(header: Text(favourite.title)) {
+                        ForEach(favourite.elements) { element in
+                            NavigationLink(destination: DetailsView(chosenFavoriteElement: element)) {
+                                Text(element.name)
+                            }
+                        }
                     }
                 }
-            }
+            }.navigationTitle("Favourite Book")
             
         }
+        
+      
     }
 }
 
