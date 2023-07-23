@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SettingsVC.swift
 //  Snapchat
 //
 //  Created by Cem Bıçakcı on 23.07.2023.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+
     }
+    
 
-
+    @IBAction func logoutClicked(_ sender: Any) {
+    }
 }
-
