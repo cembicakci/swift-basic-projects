@@ -20,15 +20,15 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="121" id="iGe-fm-Q83" customClass="CryptoTableViewCell" customModule="CryptoCrazy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="121"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="81" id="iGe-fm-Q83" customClass="CryptoTableViewCell" customModule="CryptoCrazy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iGe-fm-Q83" id="RiL-Ss-PVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz9-bc-vXY">
-                                                    <rect key="frame" x="20" y="28" width="360" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz9-bc-vXY">
+                                                    <rect key="frame" x="20" y="11" width="360" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="360" id="9Rh-U3-5Dc"/>
                                                     </constraints>
@@ -37,7 +37,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-FS-nVT">
-                                                    <rect key="frame" x="20" y="64" width="360" height="21"/>
+                                                    <rect key="frame" x="20" y="49" width="360" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                             <constraints>
                                                 <constraint firstItem="Gz9-bc-vXY" firstAttribute="leading" secondItem="RiL-Ss-PVW" secondAttribute="leadingMargin" id="3h0-TV-wGB"/>
                                                 <constraint firstItem="Gz9-bc-vXY" firstAttribute="trailing" secondItem="Uhd-FS-nVT" secondAttribute="trailing" id="4cS-jd-zfs"/>
-                                                <constraint firstItem="Uhd-FS-nVT" firstAttribute="top" secondItem="Gz9-bc-vXY" secondAttribute="bottom" constant="17" id="9O3-xU-9dx"/>
+                                                <constraint firstItem="Uhd-FS-nVT" firstAttribute="top" secondItem="Gz9-bc-vXY" secondAttribute="bottom" constant="40" id="9O3-xU-9dx"/>
                                                 <constraint firstItem="Gz9-bc-vXY" firstAttribute="leading" secondItem="Uhd-FS-nVT" secondAttribute="leading" id="ZPb-EN-G4W"/>
                                                 <constraint firstItem="Gz9-bc-vXY" firstAttribute="top" secondItem="RiL-Ss-PVW" secondAttribute="topMargin" constant="17" id="oOa-VR-Cka"/>
                                             </constraints>
