@@ -46,6 +46,8 @@ class CryptoViewController: UIViewController, AnyView, UITableViewDelegate, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .yellow
+        
         view.addSubview(tableView)
         view.addSubview(messageLabel)
         
