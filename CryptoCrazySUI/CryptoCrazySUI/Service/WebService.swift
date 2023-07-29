@@ -9,6 +9,16 @@ import Foundation
 
 class WebService {
     
+    func downloadCurrenciesAsync(url: URL) async throws -> [CyrptoCurrency]{
+        // _ -> response veriyor. kullanmadık.
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        let currencies = try? JSONDecoder().decode([CyrptoCurrency].self, from: data)
+        return currencies ?? []
+    }
+    
+    
+    /*
     //escaping: responsun gelmesini bekleyecek, geldikten sonra result verecek. Ya CyrptoCurrency, ya da Error
     func downloadCurrencies(url: URL, completion: @escaping(Result<[CyrptoCurrency]?, DownloaderError>) -> Void){
         
@@ -30,8 +40,11 @@ class WebService {
             completion(.success(currencies))
             
         }.resume()
-        
+    
+    
     }
+     
+     */
     
 }
 

@@ -62,7 +62,6 @@
 				E5AEAB472A756880008BDE43 /* View */,
 				E5AEAB462A756876008BDE43 /* Model */,
 				E5AEAB382A756804008BDE43 /* CryptoCrazySUIApp.swift */,
-				E5AEAB3A2A756804008BDE43 /* MainView.swift */,
 				E5AEAB3C2A756805008BDE43 /* Assets.xcassets */,
 				E5AEAB3E2A756805008BDE43 /* Preview Content */,
 			);
@@ -88,6 +87,7 @@
 		E5AEAB472A756880008BDE43 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E5AEAB3A2A756804008BDE43 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
