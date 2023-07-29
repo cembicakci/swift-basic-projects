@@ -11,6 +11,8 @@
 		E5AEAB3B2A756804008BDE43 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEAB3A2A756804008BDE43 /* MainView.swift */; };
 		E5AEAB3D2A756805008BDE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AEAB3C2A756805008BDE43 /* Assets.xcassets */; };
 		E5AEAB402A756805008BDE43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AEAB3F2A756805008BDE43 /* Preview Assets.xcassets */; };
+		E5AEAB4B2A75691E008BDE43 /* CyrptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEAB4A2A75691E008BDE43 /* CyrptoCurrency.swift */; };
+		E5AEAB4D2A756AC5008BDE43 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEAB4C2A756AC5008BDE43 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E5AEAB3A2A756804008BDE43 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E5AEAB3C2A756805008BDE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AEAB3F2A756805008BDE43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5AEAB4A2A75691E008BDE43 /* CyrptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyrptoCurrency.swift; sourceTree = "<group>"; };
+		E5AEAB4C2A756AC5008BDE43 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		E5AEAB462A756876008BDE43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5AEAB4A2A75691E008BDE43 /* CyrptoCurrency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		E5AEAB492A75688B008BDE43 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E5AEAB4C2A756AC5008BDE43 /* WebService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AEAB4B2A75691E008BDE43 /* CyrptoCurrency.swift in Sources */,
 				E5AEAB3B2A756804008BDE43 /* MainView.swift in Sources */,
+				E5AEAB4D2A756AC5008BDE43 /* WebService.swift in Sources */,
 				E5AEAB392A756804008BDE43 /* CryptoCrazySUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
