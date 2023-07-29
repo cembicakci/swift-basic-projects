@@ -23,7 +23,7 @@ protocol AnyPresenter{
     func interactorDidDownloadCrypto(result: Result<[Crypto], Error>)
 }
 
-class CryptoPresenter: AnyPresenter{
+class CryptoPresenter: AnyPresenter{ 
     var router: AnyRouter?
     
     var interactor: AnyInteractor?
