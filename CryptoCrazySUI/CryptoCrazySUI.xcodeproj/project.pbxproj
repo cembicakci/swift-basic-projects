@@ -13,6 +13,7 @@
 		E5AEAB402A756805008BDE43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AEAB3F2A756805008BDE43 /* Preview Assets.xcassets */; };
 		E5AEAB4B2A75691E008BDE43 /* CyrptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEAB4A2A75691E008BDE43 /* CyrptoCurrency.swift */; };
 		E5AEAB4D2A756AC5008BDE43 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEAB4C2A756AC5008BDE43 /* WebService.swift */; };
+		E5AEAB4F2A757102008BDE43 /* CyrptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEAB4E2A757102008BDE43 /* CyrptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E5AEAB3F2A756805008BDE43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5AEAB4A2A75691E008BDE43 /* CyrptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyrptoCurrency.swift; sourceTree = "<group>"; };
 		E5AEAB4C2A756AC5008BDE43 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E5AEAB4E2A757102008BDE43 /* CyrptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyrptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		E5AEAB482A756885008BDE43 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E5AEAB4E2A757102008BDE43 /* CyrptoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AEAB4B2A75691E008BDE43 /* CyrptoCurrency.swift in Sources */,
+				E5AEAB4F2A757102008BDE43 /* CyrptoViewModel.swift in Sources */,
 				E5AEAB3B2A756804008BDE43 /* MainView.swift in Sources */,
 				E5AEAB4D2A756AC5008BDE43 /* WebService.swift in Sources */,
 				E5AEAB392A756804008BDE43 /* CryptoCrazySUIApp.swift in Sources */,
